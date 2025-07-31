@@ -1,10 +1,6 @@
 function checkSpam(str) {
-  let uppStr = str.toUpperCase()
-  let Bet = '1xBet'
-  let XXX = 'XXX'
-  let upp1xBet = Bet.toUpperCase()
-  let uppXXX = XXX.toUpperCase()
-
-  return (uppStr.indexOf(uppXXX) !== -1 || uppStr.indexOf(upp1xBet) !== -1)
-
+  const lowStr = str.toLowerCase()
+  const low1xBet = '1xBet'.toLowerCase()
+  const lowXXX = 'XXX'.toLowerCase()
+  return lowStr.includes(lowXXX) || lowStr.includes(low1xBet);
 }
